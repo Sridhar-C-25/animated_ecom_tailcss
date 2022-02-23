@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-12 ml-10 rounded-full py-2 border font-medium;
+}
+.btn:hover {
+  @apply bg-white text-gray-800;
+}
+
+.btn-orange {
+  @apply bg-Orange font-medium flex absolute duration-300 z-[100]
+  bottom-32 items-center px-8 py-2.5 rounded-full;
+}
+.btn-orange:hover {
+  @apply bg-white;
+}
+.btn-orange:hover ~ .product {
+  @apply animate-bounce;
+}
